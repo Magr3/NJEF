@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Primary Container */
+.primaryContainer {
+  max-width: 60%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: rgb(255, 255, 255);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  color: black; 
+  padding-bottom: 15%;
+}
+
+/* Img for header */
+.imageContainer {
+  position: relative;
+  overflow: hidden;
+}
+
+.imageContainer img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-100%); 
+  transition: transform 0.5s ease-in-out; 
+}
+
+.imageContainer img.loaded {
+  transform: translateY(0); 
+}
+
+/* Text area */
+.textContainer {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.mainTitle {
+  color: #533FF9;
+  text-align: left;
+  font-family: "PT Serif", serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: 3px;
+  margin: 35px 0px;
+}
+
+.paragraphOne {
+  margin: 5px 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.paragraphOneSpan {
+  color: #FF0000;
+}
+
+.paragraphTwo {
+  margin: 5px 0px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.paragraphThree {
+  margin: 5px 0px;
+  font-size: 14px;
+}
+
+.paragraphFour {
+  margin: 5px 0px;
+  font-size: 14px;
+}
+
+/* Timer */
+.timerContainer {
+  text-align: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+.visible {
+  opacity: 1;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  margin-bottom: 24px;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.timerBox {
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.timeValue {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.timeLabel {
+  font-size: 14px;
+  color: #718096;
+}
+
+/* Embla Carousel */
+.embla {
+  overflow: hidden;
+  margin: 50px auto;
+  height: auto; 
+  max-width: 512px;  
+}
+
+.embla__container {
+  display: flex;
+  flex-direction: row; 
+  height: 100%;
+}
+
+.embla__slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 100%;
+  min-width: 100%;
+  padding: 16px; 
+}
+
+.embla__slide img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Button */
+.button {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 12px;
+  border-radius: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.button:hover {
+  background-color: #f7d4e683;
+}
+
+/* Link */
+.videoLink {
+  text-align: center;
+  color: #533FF9;
+  text-align: left;
+  font-weight: 600;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+  .primaryContainer {
+    max-width: 100%; 
+    text-align: center;
+  }
+
+  .mainTitle {
+    color: #533FF9;
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .paragraphOne {
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  .paragraphTwo {
+    font-weight: 500;
+    font-size: 12px;
+  }
+  
+  .paragraphThree {
+    font-size: 12px;
+  }
+  
+  .paragraphFour {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .flexContainer {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .timerBox {
+    padding: 10px;
+    border-radius: 6px;
+  }
+  
+  .timeValue {
+    font-size: 12px;
+  }
+  
+  .timeLabel {
+    font-size: 12px;
+  }
+
+  .embla__container {
+    margin-top: -50px;
+  }
+
+  .videoLink {
+    text-align: center;
+    color: #533FF9;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
